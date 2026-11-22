@@ -1,0 +1,7 @@
+065a9820628953d5dbc9e7d401a6396e3f84c6d7cfd991d6f502d01d7754deee  ./README-HOTFIX-CORREO-EXISTENTE-SOCIOS.md
+6d54cc6bdb9e09db78ff7fe18bab67d65299e75910f4d83f3a7aae4d28c86be0  ./UPDATE-MANIFEST-PARTNER-EMAIL-RECONCILIATION-2026-07-26.txt
+2f977956aa48f5413396800e39bf335d3492464056e56b48fba9092d80a8536a  ./app/Modules/Administration/Controllers/AdminSecurityController.php
+8657e061f35f25045917ba296891f44b0b2264ad3bfb63dbb5f1411725eaa29d  ./app/Modules/Partners/Services/PartnerPrimaryAccessService.php
+7c5ea11cdaf31b9224bf30450746619cfe33d5edbe9658bf94378d1c8d97e8c1  ./public/assets/rhino-crm.js
+c76460bb2cb681c9fa0fd713b01645d4d229cbcdfa7b6ce1b05dec3befa4ce66  ./public/sw.js
+c589815c7de81d41a0dd4af39a462e04317c6a533972c2f5e958a8a244de3965  ./routes/api_v1.php

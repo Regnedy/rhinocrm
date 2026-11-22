@@ -1,0 +1,33 @@
+RHINO CRM — Collaborative Events Party Update
+Fecha: 2026-07-24
+
+NUEVOS ARCHIVOS
+- app/Modules/Campaigns/Controllers/CampaignCollaborationController.php
+- app/Modules/Campaigns/Services/CampaignAccessService.php
+- app/Modules/Campaigns/Services/CampaignActivityService.php
+- app/Modules/Campaigns/Services/CampaignCollaborationService.php
+- app/Modules/Campaigns/Services/CampaignDietOwnershipService.php
+- app/Modules/Campaigns/Services/CampaignInvitationService.php
+- database/migrations/2026_07_24_000300_add_collaborative_event_party.php
+- README-ACTUALIZACION-EVENTOS-COLABORATIVOS.md
+
+ARCHIVOS MODIFICADOS
+- app/Modules/Campaigns/Services/CampaignService.php
+- app/Modules/NutritionEngine/Services/NutritionPlanEngineService.php
+- app/Modules/Mobile/Services/MobileMeasurementService.php
+- app/Modules/CRM/Services/ContactMeasurementIngestionService.php
+- app/Modules/Auth/Services/RolePermissionService.php
+- app/Modules/Auth/Services/PartnerPermissionPolicyService.php
+- routes/api_v1.php
+- public/assets/rhino-crm.js
+- public/sw.js
+
+MIGRACIÓN
+- 2026_07_24_000300_add_collaborative_event_party
+
+NO INCLUYE
+- .env
+- vendor
+- node_modules
+- archivos de usuarios
+- respaldos de la base de datos

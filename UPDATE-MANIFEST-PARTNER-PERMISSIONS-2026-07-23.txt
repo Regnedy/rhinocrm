@@ -1,0 +1,23 @@
+RHINO CRM - Partner Permissions Admin Update
+Fecha: 2026-07-23
+Requisito: 2026_07_23_000100_add_nutrition_library_management
+Migración nueva: 2026_07_23_000200_create_partner_permission_policies
+
+NUEVOS
+app/Modules/Administration/Services/PartnerPermissionAdminService.php
+app/Modules/Auth/Services/PartnerPermissionPolicyService.php
+database/migrations/2026_07_23_000200_create_partner_permission_policies.php
+README-ACTUALIZACION-PERMISOS-SOCIOS.md
+UPDATE-MANIFEST-PARTNER-PERMISSIONS-2026-07-23.txt
+
+MODIFICADOS
+app/Console/Commands/FirebaseProvisionUserCommand.php
+app/Modules/Administration/Controllers/AdminSecurityController.php
+app/Modules/Auth/Services/AccessTokenService.php
+app/Modules/Auth/Services/ApiSessionService.php
+app/Modules/Auth/Services/FirebaseIdentityLinkService.php
+app/Modules/Auth/Services/RolePermissionService.php
+app/Modules/Auth/Services/UserAdminService.php
+public/assets/rhino-crm.css
+public/assets/rhino-crm.js
+routes/api_v1.php

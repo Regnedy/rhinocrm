@@ -1,0 +1,69 @@
+name: Rhino CRM CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+permissions:
+  contents: read
+
+jobs:
+  quality-and-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_DATABASE: rhino_crm_test
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -proot"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP 8.3
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: bcmath, curl, dom, fileinfo, json, mbstring, openssl, pcntl, pdo_mysql, pdo_sqlite, sqlite3, tokenizer, xml, zip
+          coverage: none
+          tools: composer:v2
+
+      - name: Validate Composer manifest
+        run: composer validate --no-check-lock
+
+      - name: Install PHP dependencies
+        run: composer install --prefer-dist --no-interaction --no-progress
+
+      - name: Security audit
+        run: composer audit
+
+      - name: Prepare environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+          printf '\nAPP_ENV=testing\nAPP_DEBUG=false\nDB_CONNECTION=mysql\nDB_HOST=127.0.0.1\nDB_PORT=3306\nDB_DATABASE=rhino_crm_test\nDB_USERNAME=root\nDB_PASSWORD=root\nRHINO_AUTH_DRIVER=local\nFIREBASE_AUTH_ENABLED=false\nCONTACT_ID_HASH_KEY=ci_only_64_character_secret_change_me_012345678901234567890123456789\n' >> .env
+          php artisan migrate --force
+          php artisan rhino:bootstrap --force
+
+      - name: Static audit
+        run: bash scripts/static_audit.sh
+
+      - name: Laravel Pint
+        run: vendor/bin/pint --test
+
+      - name: PHPStan
+        run: vendor/bin/phpstan analyse --memory-limit=2G
+
+      - name: Run tests
+        run: php artisan test

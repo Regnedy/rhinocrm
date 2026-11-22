@@ -1,0 +1,11 @@
+Validation performed:
+- PHP syntax: passed for all modified PHP files.
+- JavaScript syntax (node --check): passed.
+- Laravel route registration: 5 primary-access routes registered.
+- Service worker cache version: v18-partner-firebase-onboarding.
+- ZIP structure and CRC: pending package generation, validated afterward.
+
+Limitations of local environment:
+- Composer executable is not installed, so composer dump-autoload could not be executed locally.
+- No PDO MySQL/SQLite driver is available, so the migration could not be executed against a local database.
+- Firebase delivery cannot be tested without the production service account and project.

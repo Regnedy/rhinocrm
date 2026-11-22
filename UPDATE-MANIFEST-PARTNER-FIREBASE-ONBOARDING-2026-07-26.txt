@@ -1,0 +1,15 @@
+RHINO CRM Partner Onboarding + Firebase Automation
+Date: 2026-07-26
+Migration: 2026_07_26_000600_add_partner_primary_access_and_firebase_verification
+Frontend cache: rhino-shell-v18-partner-firebase-onboarding
+
+Capabilities:
+- Atomic partner + primary admin onboarding
+- Firebase password synchronization
+- Compact Firebase custom claims
+- Automatic verification email
+- Resend and copy verification link from CRM
+- Firebase status refresh from CRM
+- Repair missing Firebase identity from CRM
+- Primary password reset in Rhino + Firebase
+- Partner-centric SUPER_ADMIN interface

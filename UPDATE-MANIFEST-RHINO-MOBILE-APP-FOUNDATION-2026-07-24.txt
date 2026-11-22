@@ -1,0 +1,6 @@
+RHINO CRM Mobile App Native Backend Foundation
+Fecha: 2026-07-24
+Package Android: com.activa7.rhinocrm.mobile
+Cobros: desactivados
+Migración: 2026_07_24_000400_create_mobile_app_billing_foundation
+Endpoints: /api/v1/mobile/app/* y /api/v1/admin/billing/*

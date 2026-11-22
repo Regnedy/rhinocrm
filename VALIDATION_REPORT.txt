@@ -1,0 +1,36 @@
+RHINO CRM — Validación de nutrición móvil, PDF y dashboard
+Fecha: 2026-07-22
+Versión: 2026.07.22-mobile-nutrition-share.1
+
+Comprobaciones:
+- Sintaxis PHP: 293 archivos, OK.
+- Sintaxis JavaScript: CRM y service worker, OK.
+- composer.json y biblioteca nutricional JSON: OK.
+- Píldoras alimentarias disponibles: 106.
+- Clases App registradas: 248.
+- Imports internos faltantes: 0.
+- Rutas/controladores revisados: 151 enlaces, 0 faltantes.
+- Migración 001100 incremental: OK.
+- Método down() no destructivo: OK.
+- Prefijo predeterminado MX +52: incluido.
+- Captura de 10 dígitos y normalización internacional: incluida.
+- Pestaña Nutrición dentro del prospecto: incluida.
+- PDF privado de plan alimenticio: incluido.
+- Menú, recetas con emojis, compras y recomendaciones: incluidos.
+- Compartición Web Share y contrato de puente Android: incluidos.
+- Envío directo por WhatsApp Cloud API: incluido.
+- Estados SENT, DELIVERED, READ y FAILED: integrados.
+- Dashboard por usuario y catálogo de nueve gadgets: incluidos.
+- Códigos de movimiento 604 a 609: incluidos.
+- Sin APK, Gradle, AndroidManifest ni cambios de RHINO Kiosco: OK.
+- Sin credenciales Meta, Firebase u OpenAI: OK.
+
+No fue posible ejecutar:
+- La migración contra la base MySQL real.
+- Laravel con el vendor del hosting.
+- Renderizado Dompdf en HostGator.
+- Compartición Web Share en un teléfono físico.
+- Puente nativo Android, porque la APK todavía no existe.
+- WhatsApp Cloud API, webhooks, cola y cron reales.
+
+Instalar primero con respaldo y prospectos ficticios.

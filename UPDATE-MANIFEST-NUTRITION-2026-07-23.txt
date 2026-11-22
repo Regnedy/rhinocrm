@@ -1,0 +1,14 @@
+app/Modules/Auth/Services/RolePermissionService.php
+app/Modules/NutritionEngine/Controllers/NutritionEngineController.php
+app/Modules/NutritionEngine/Services/NutritionPillService.php
+app/Modules/NutritionEngine/Services/NutritionPlanEngineService.php
+app/Modules/NutritionEngine/Services/NutritionPlanPdfService.php
+app/Modules/NutritionEngine/Services/NutritionTemplateService.php
+app/Modules/NutritionEngine/Support/NutritionDocumentTemplate.php
+database/migrations/2026_07_23_000100_add_nutrition_library_management.php
+public/assets/rhino-crm.css
+public/assets/rhino-crm.js
+resources/views/reports/nutrition-plan.blade.php
+routes/api_v1.php
+README-ACTUALIZACION-PANEL-COMIDAS-PLANTILLAS-PDF.md
+UPDATE-MANIFEST-NUTRITION-2026-07-23.txt

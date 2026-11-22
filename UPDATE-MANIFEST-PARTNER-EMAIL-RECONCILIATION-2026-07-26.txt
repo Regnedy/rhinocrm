@@ -1,0 +1,10 @@
+RHINO CRM Partner Existing Email Reconciliation Hotfix
+Version: 2026-07-26
+Requires: 2026_07_26_000600_add_partner_primary_access_and_firebase_verification
+Migration: none
+Files:
+- app/Modules/Partners/Services/PartnerPrimaryAccessService.php
+- app/Modules/Administration/Controllers/AdminSecurityController.php
+- routes/api_v1.php
+- public/assets/rhino-crm.js
+- public/sw.js

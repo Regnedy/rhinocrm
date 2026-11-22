@@ -1,0 +1,9 @@
+RHINO CRM - Hotfix menú Nutrición SUPER_ADMIN
+Fecha: 2026-07-24
+
+Archivos:
+- public/assets/rhino-crm.js
+- public/sw.js
+
+No requiere migraciones.
+No requiere composer update.

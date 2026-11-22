@@ -1,0 +1,14 @@
+RHINO CRM - HOTFIX ADMINISTRACION GLOBAL DE COMIDAS
+Fecha: 2026-07-23
+
+Archivos incluidos:
+- app/Modules/NutritionEngine/Services/NutritionPillService.php
+- public/assets/rhino-crm.js
+- README-HOTFIX-ADMIN-COMIDAS-GLOBALES.md
+
+Cambios:
+- SUPER_ADMIN puede editar, aprobar y quitar comidas globales.
+- SUPER_ADMIN puede agregar nuevas comidas al catálogo global.
+- Las comidas usadas por planes se archivan en lugar de borrarse físicamente.
+- Los socios conservan el aislamiento: solo editan o quitan comidas de su organización.
+- No agrega migraciones y no modifica datos durante la instalación.

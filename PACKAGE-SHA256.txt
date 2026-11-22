@@ -1,0 +1,13 @@
+d45eb8a07043333369ac15a0e3a9a22538ce827673891c3a7aee1fb13479a43c  ./.env.example
+0ec4190d8050a0e36291a0445e8ec32628f2d7129043467a34c34f771d143109  ./README-ACTUALIZACION-APP-RHINO-CRM-BASE.md
+e48adabddaf276b5caac1d66b186d9defb15277071a29c1af68cae3b48b33f9f  ./UPDATE-MANIFEST-RHINO-MOBILE-APP-FOUNDATION-2026-07-24.txt
+447cdcf0b7257d95dfeb362c87719b0ba164a145895f7e831fb07668294b3f5c  ./app/Modules/Billing/Controllers/BillingAdminController.php
+bac3d12d1e5df8dd997da6721c43af973c0cbe54492af2fd61aade868eede5e8  ./app/Modules/Billing/Services/BillingAccessService.php
+56dad401bec00cea32e0d50ae23e2926525114ebd38d68968992973e1ddce563  ./app/Modules/Billing/Services/BillingAdminService.php
+0398f7e755287499f13fb39658cdb14af75c839154371a57ddb325bd223f59a1  ./app/Modules/Mobile/Controllers/MobileAppController.php
+0de81b1bf27f12e64f8e8cb7ca289870fc85d48192ba14d71af46aa72b77b9d3  ./app/Modules/Mobile/Services/MobileAppService.php
+1a9f09942caa5340cb21af3cc35f0d8e4a68a6e097a284239d62f6e0ff1db1d3  ./config/billing.php
+cece259693ba687e2eb850d8d69f5af4849ee161b7815fdd941e87946f64c94d  ./database/migrations/2026_07_24_000400_create_mobile_app_billing_foundation.php
+14b5c8b6d68f50129d03eba7ab4107f47b12f18bf8eb2bf49fa6723d427f5d6e  ./docs/mobile/BILLING-DISABLED-ARCHITECTURE.md
+3e8ea20cde1b70ee797ec174933f2df2d7299f8658efe6ac8900c3ff5762b775  ./docs/mobile/RHINO-MOBILE-APP-V1.md
+5b7a7d06756dd5b4bd456be79396b5a8605ffa1a6bbcec8fe18b0ea46d78d5bb  ./routes/api_v1.php

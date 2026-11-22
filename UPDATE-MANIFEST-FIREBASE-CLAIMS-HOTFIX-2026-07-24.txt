@@ -1,0 +1,5 @@
+RHINO CRM Firebase claims-too-large hotfix
+Date: 2026-07-24
+No database migrations.
+No dependency changes.
+Purpose: remove full permission arrays from Firebase custom claims and keep authorization in MySQL.

@@ -1,0 +1,23 @@
+RHINO CRM — Prospect Weighing Visual + Mobile API v1
+Date: 2026-07-24
+
+ADDED
+app/Modules/CRM/Services/ContactMeasurementPresentationService.php
+docs/api/CONTACT-MEASUREMENT-DASHBOARD-V1.md
+README-ACTUALIZACION-PESAJE-VISUAL-PROSPECTO-APP.md
+UPDATE-MANIFEST-PROSPECT-WEIGHING-VISUAL-MOBILE-2026-07-24.txt
+
+UPDATED
+routes/api_v1.php
+app/Modules/CRM/Controllers/ContactController.php
+app/Modules/CRM/Services/ContactManagementService.php
+app/Modules/Mobile/Controllers/MobileController.php
+app/Modules/Campaigns/Controllers/CampaignCollaborationController.php
+app/Modules/Campaigns/Services/CampaignCollaborationService.php
+public/assets/rhino-crm.js
+public/assets/rhino-crm.css
+public/sw.js
+
+DATABASE
+No new migrations.
+Requires 2026_07_24_000300_add_collaborative_event_party.
