@@ -27,6 +27,9 @@ final class VerifyEsp32Signature
 
         $device = $this->devices->findByMac($mac);
         if ($device === null) return $this->abort('DEVICE_NOT_REGISTERED', 'Dispositivo no registrado.', 403);
+        if ($device->getStatus() === 'UNASSIGNED') {
+            return $this->abort('DEVICE_UNASSIGNED', 'La báscula no está asignada a ningún socio.', 403);
+        }
         if (!$device->isActive()) return $this->abort('DEVICE_SUSPENDED', 'Dispositivo suspendido.', 403);
         $partner = DB::table('partners')->where('id', $device->getPartnerId())->whereNull('deleted_at')->first();
         if ($partner === null || (string) $partner->status !== 'ACTIVE') return $this->abort('PARTNER_SUSPENDED', 'El socio propietario está suspendido.', 403);

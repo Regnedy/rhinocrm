@@ -1,6 +1,7 @@
 <?php
 
 use App\Modules\Administration\Controllers\AdminSecurityController;
+use App\Modules\Administration\Controllers\AdminDeviceController;
 use App\Modules\Analytics\Controllers\DashboardController;
 use App\Modules\Analytics\Controllers\DashboardGadgetController;
 use App\Modules\Analytics\Controllers\ReportController;
@@ -275,6 +276,7 @@ Route::prefix('v1')->group(function (): void {
         Route::prefix('admin')->group(function (): void {
             Route::get('/partners', [AdminSecurityController::class, 'partners']);
             Route::get('/kiosk-versions', [KioskUpdateController::class, 'index']);
+            Route::post('/devices/{id}/unassign', [AdminDeviceController::class, 'unassign']);
             Route::post('/kiosk-versions', [KioskUpdateController::class, 'publish']);
             Route::post('/kiosk-versions/{id}/revoke', [KioskUpdateController::class, 'revoke']);
             Route::get('/billing/overview', [BillingAdminController::class, 'overview']);
