@@ -16,6 +16,7 @@
     <link rel="apple-touch-icon" href="/icons/rhino-192.png">
     <link rel="stylesheet" href="/assets/rhino-crm.css?v={{ rawurlencode($assetVersion) }}">
     <script defer src="/assets/rhino-crm.js?v={{ rawurlencode($assetVersion) }}"></script>
+    <script defer src="/assets/rhino-device-unassignment.js?v={{ rawurlencode($assetVersion) }}"></script>
 </head>
 <body>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
